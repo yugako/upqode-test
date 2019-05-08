@@ -23,6 +23,40 @@
 			font-weight: 400;
 			line-height: 24px;
 			letter-spacing: 0.56px;
+			margin-bottom: 89px;
+		}
+	}
+	&-items {
+		display: flex;
+		justify-content: space-between;
+	}
+	&-item {
+		text-align: center;
+		border: 1px solid #ebebeb;
+		padding: 41px 22px 36px 23px;
+		flex-basis: 18%;
+		&_img {
+			color: #503392;
+			font-size: 60px;
+			margin-bottom: 51px;
+		}
+		&_title {
+			color: #232323;
+			font-family: $default-font;
+			font-size: 14px;
+			font-weight: 700;
+			line-height: 60px;
+			text-transform: uppercase;
+			letter-spacing: 0.7px;
+			margin-bottom: 28px;
+		}
+		&_text {
+			color: #373737;
+			font-family: $default-font;
+			font-size: 14px;
+			font-weight: 300;
+			line-height: 20px;
+			letter-spacing: 0.56px;
 		}
 	}
 }
