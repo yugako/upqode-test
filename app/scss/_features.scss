@@ -1,0 +1,28 @@
+.features {
+	padding-top: 115px;
+	padding-bottom: 117px;
+	&-header {
+		text-align: center;
+		&_title {
+			color: #232323;
+			font-family: Lato;
+			font-size: 35px;
+			font-weight: 700;
+			line-height: 24px;
+			text-transform: uppercase;
+			letter-spacing: 1.4px;
+			margin-bottom: 33px;
+			.title_special {
+				color: #009dda;
+			}
+		}
+		&_subtitle {
+			color: #999999;
+			font-family: Lato;
+			font-size: 14px;
+			font-weight: 400;
+			line-height: 24px;
+			letter-spacing: 0.56px;
+		}
+	}
+}
