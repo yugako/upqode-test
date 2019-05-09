@@ -1,47 +1,55 @@
 @import "vars";
 
+@media (min-width: 1024.5px) {
+	.menu {
+		display: block!important;
+	}
+	.d-n {
+		display: none;
+	}
+}
+@media (max-width: 1024px) {
+	.group-header {
+		flex-direction: column;
 
-/*==========  Desktop First  ==========*/
-
-// ≥1200px
-@include media-breakpoint-down(lg) {
-	
+	}
+	.menu {
+		display: none;
+		margin: auto;
+	}
+	.burger {
+		display: block;
+		span {
+			margin-left: auto;
+		}
+	}
+	.header {
+		&-menu {
+			&_list {
+				flex-direction: column;
+				align-items: center;
+			}
+		}	
+	}
+	.menu-active {
+		display: block;
+	}
+	.features {
+		&-items {
+			display: block;
+		}
+		&-item {
+			margin-bottom: 20px;
+		}
+	}
 }
 
-// ≥992px
-@include media-breakpoint-down(md) {
-
-}
-
-// ≥768px
-@include media-breakpoint-down(sm) {
-
-}
-
-// ≥576px
-@include media-breakpoint-down(xs) {
-
-}
-
-
-/*==========  Mobile First  ==========*/
-
-// ≤576px
-@include media-breakpoint-up(sm) {
-
-}
-
-// ≤768px
-@include media-breakpoint-up(md) {
-
-}
-
-// ≤992px
-@include media-breakpoint-up(lg) {
-
-}
-
-// ≤1200px
-@include media-breakpoint-up(xl) {
-	
+@media (max-width: 768px) {
+	.about {
+		&-content {
+			&_picture {
+				display: none;
+			}
+		}
+	}
 }

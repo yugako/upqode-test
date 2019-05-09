@@ -26,30 +26,24 @@
 	}
 	&-content {
 		position: relative;
-
-		&_map {
-			position: relative;
-			&::before {
-				content: '';
-				position: absolute;
-				width: 100%;
-				height: 100%;
-				top: 0;
-				left: 0;
-				background-color: rgba(#000, 0.65);
-			}
-			iframe {
-				width: 100%;
-			}
+		background-image: url('../img/map.png');
+		padding-top: 98px;
+		padding-bottom: 101px;
+		padding-left: 30px;
+		padding-right: 30px;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			top: 0;
+			left: 0;
+			background-color: rgba(#000, 0.65);
 		}
 		&_data {
-			position: absolute;
-			padding-top: 50px;
-			padding-bottom: 50px;
-			padding-left: 67px;
-			top: 98px;
-			left: 227px;
+			padding: 30px 50px;
 			max-width: 945px;
+			margin: auto;
 			width: 100%;
 			background-color: rgba(#1a1a1a, 0.65);
 		}

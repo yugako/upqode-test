@@ -1,9 +1,5 @@
 .banner {
-	display: flex;
-	justify-content: center;
-	align-items: center;
 	height: 790px;
-	background-image: url('../img/banner-bg.png');
 	position: relative;
 	z-index: 1;
 	&::before {
@@ -18,7 +14,60 @@
 		opacity: 0.8;
 		z-index: -1;
 	}
+	&-slider {
+		position: relative;
+		&_next {
+			right: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		&_prev {
+			left: 0;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		.slick {
+			&-dots {
+				position: absolute;
+				bottom: 0;
+				display: flex;
+				list-style: none;
+				padding-left: 0;
+				left: 50%;
+				span.dot {
+					display: block;
+					width: 9px;
+					height: 9px;
+					border-radius: 50%;
+					background-color: rgba(#fff, .4);
+					margin: auto 3px;
+				}
+
+			}
+			&-active {
+				span.dot {
+					background-color: #fff;
+				}
+				
+			}
+		}
+	}
+	&-buttons {
+		position: absolute;
+		z-index: 3;
+		width: 60px;
+		height: 60px;
+		background-color: rgba(#fff, .2);
+		border: none;
+		color: #fff;
+
+	}
 	&-content {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		width: 100%;
 		text-align: center;
 		&_title {
 			color: #fff;
@@ -41,4 +90,6 @@
 			letter-spacing: 0.64px;
 		}
 	}
+
 }
+

@@ -58,4 +58,32 @@
 			letter-spacing: 0.46px;
 		}
 	}
+	&-slider {
+		.slick {
+			&-dots {
+				position: absolute;
+				bottom: 0;
+				display: flex;
+				list-style: none;
+				padding-left: 0;
+				left: 50%;
+				span.dot {
+					display: block;
+					width: 9px;
+					height: 9px;
+					border-radius: 50%;
+					background-color: #d7d7d7;
+					margin: auto 3px;
+				}
+
+			}
+			&-active {
+				span.dot {
+					background-color: #503392;
+				}
+				
+			}
+		}
+	}
 }
+

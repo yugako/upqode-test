@@ -17,7 +17,7 @@
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-touch-icon-180x180.png">
 	<!-- Template Basic Images End -->
-	
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
 	<!-- Custom Browsers Color Start -->
 	<meta name="theme-color" content="#000">
 	<!-- Custom Browsers Color End -->
@@ -27,54 +27,96 @@
 </head>
 
 <body>
-	<header class="header">
+	<header class="header" id='home'>
 		<div class="container">
-			<div class="row justify-content-between align-content-center">
-				<div class="header-logo">
-					up<span class='header-logo_special'>qode</span> 
+			<div class="row justify-content-between align-items-center">
+				<div class="col-6 col-sm-6 col-lg-3">
+					<div class="header-logo">
+						up<span class='header-logo_special'>qode</span> 
+					</div>
+					<!-- /.header-logo -->
 				</div>
-				<!-- /.header-logo -->
-				<div class="align-right">
-					<nav class="header-menu">
-						<ul class="header-menu_list">
-							<li class="header-menu_item"><a href="#home" class="header-menu_link">Home</a></li>
-							<!-- /.header-menu_item -->
-							<li class="header-menu_item"><a href="#products" class="header-menu_link">Products</a></li>
-							<!-- /.header-menu_item -->
-							<li class="header-menu_item"><a href="#about" class="header-menu_link">About</a></li>
-							<!-- /.header-menu_item -->
-							<li class="header-menu_item"><a href="#contact" class="header-menu_link">Contact</a></li>
-							<!-- /.header-menu_item -->
-						</ul>
-						<!-- /.header-menu_list -->
-					</nav>
-					<!-- /.header-menu -->
-					<form class="header-search">
-						<input type="text" class="header-search_input" name='search' >
-						<img src="./img/search.png" class="header-search_icon" alt="Search">
-					</form>
-					<!-- /.header-search -->
+				<!-- /.col-6 col-sm-6 col-lg-3 -->
+				<div class="col-6 col-sm-12 col-lg-9 order-2 order-lg-1 menu" >
+					<div class="group-header">
+						<nav class="header-menu">
+							<ul class="header-menu_list">
+								<li class="header-menu_item"><a href="#home" class="header-menu_link">Home</a></li>
+								<!-- /.header-menu_item -->
+								<li class="header-menu_item"><a href="#products" class="header-menu_link">Products</a></li>
+								<!-- /.header-menu_item -->
+								<li class="header-menu_item"><a href="#about" class="header-menu_link">About</a></li>
+								<!-- /.header-menu_item -->
+								<li class="header-menu_item"><a href="#contact" class="header-menu_link">Contact</a></li>
+								<!-- /.header-menu_item -->
+							</ul>
+							<!-- /.header-menu_list -->
+						</nav>
+						<!-- /.header-menu -->
+						<form class="header-search order-1 order-lg-2">
+							<input type="text" class="header-search_input" name='search' >
+							<img src="./img/search.png" class="header-search_icon" alt="Search">
+						</form>
+						<!-- /.header-search -->
+					</div>
+					
 				</div>
-				<!-- /.justify-content-end -->
+				<!-- /.col-6 col-sm-12 col-lg-8 -->
+				<div class="col-6 col-sm-6 col-lg-1 d-n">
+					<div class="burger">
+						<span></span>
+					</div>
+				</div>
+				<!-- /.col-6 col-sm-6 col-lg-1 -->
+
 				
 			</div>
 			<!-- /.row -->
+			
 		</div>
 		<!-- /.container -->
 	</header>
 	<!-- /.header -->
-	<section class="banner">
-		<div class="banner-content">
-			<h1 class="banner-content_title">Creative <span class="title_special">Design Agency</span></h1>
-			<!-- /.banner-content_title -->
-			<div class="banner-content_subtitle">
-				Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit <br> non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. 
+	<div class="banner-slider">
+		<section class="banner" style="background-image: url('../img/banner-bg.png');">
+			<div class="banner-content" >
+				<h1 class="banner-content_title">Beautiful <span class="title_special">Layouts Agency</span></h1>
+				<!-- /.banner-content_title -->
+				<div class="banner-content_subtitle">
+					Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit <br> non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. 
+				</div>
+				<!-- /.banner-content_subtitle -->
 			</div>
-			<!-- /.banner-content_subtitle -->
-		</div>
-		<!-- /.banner-content -->
-	</section>
-	<!-- /.banner -->
+			<!-- /.banner-content -->
+		</section>
+		<!-- /.banner -->
+		<section class="banner" style="background-image: url('../img/banner-bg.png');">
+			<div class="banner-content" >
+				<h1 class="banner-content_title">Creative <span class="title_special">Design Agency</span></h1>
+				<!-- /.banner-content_title -->
+				<div class="banner-content_subtitle">
+					Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit <br> non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. 
+				</div>
+				<!-- /.banner-content_subtitle -->
+			</div>
+			<!-- /.banner-content -->
+		</section>
+		<!-- /.banner -->
+		<section class="banner" style="background-image: url('../img/banner-bg.png');">
+			<div class="banner-content" >
+				<h1 class="banner-content_title">Unique <span class="title_special">Design</span></h1>
+				<!-- /.banner-content_title -->
+				<div class="banner-content_subtitle">
+					Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit <br> non mi porta gravida at eget metus. Curabitur blandit tempus porttitor. 
+				</div>
+				<!-- /.banner-content_subtitle -->
+			</div>
+			<!-- /.banner-content -->
+		</section>
+		<!-- /.banner -->
+	</div>
+	<!-- /.top-slider -->
+	
 	<section class="features">
 		<div class="container">
 			<div class="features-header">
@@ -162,138 +204,386 @@
 		<!-- /.container -->
 	</section>
 	<!-- /.features -->
-	<section class="products">
+	<section class="products" id="products">
 		<h1 class="products-title">
 			our <span class="title_special">products</span>
 		</h1>
 		<!-- /.products-title -->
-		<div class="products-items">
-			<div class="container">
-				<div class="row justify-content-center">
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="products-item">
-							<div class="products-item_img">
-								<img class='img-responsive' src="../img/products/product-item-1.png" alt="">
+		<div class="products-slider">
+			<div class="products-items">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-1.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
 							</div>
-							<!-- /.products-item_img -->
-							<div class="products-item_content">
-								<div class="products-item_title">Title</div>
-								<!-- /.products-item_title -->
-								<div class="products-item_subtitle">Best Product</div>
-								<!-- /.products-item_subtitle -->
-								<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
-								<!-- /.products-item_text -->
-							</div>
-							<!-- /.products-item_content -->
+							<!-- /.products-item -->
 						</div>
-						<!-- /.products-item -->
-					</div>
-					<!-- /.col-12 col-md-6 col-lg-4 -->
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="products-item">
-							<div class="products-item_img">
-								<img class='img-responsive' src="../img/products/product-item-2.png" alt="">
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-2.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
 							</div>
-							<!-- /.products-item_img -->
-							<div class="products-item_content">
-								<div class="products-item_title">Title</div>
-								<!-- /.products-item_title -->
-								<div class="products-item_subtitle">Best Product</div>
-								<!-- /.products-item_subtitle -->
-								<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
-								<!-- /.products-item_text -->
-							</div>
-							<!-- /.products-item_content -->
+							<!-- /.products-item -->
 						</div>
-						<!-- /.products-item -->
-					</div>
-					<!-- /.col-12 col-md-6 col-lg-4 -->
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="products-item">
-							<div class="products-item_img">
-								<img class='img-responsive' src="../img/products/product-item-3.png" alt="">
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-3.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
 							</div>
-							<!-- /.products-item_img -->
-							<div class="products-item_content">
-								<div class="products-item_title">Title</div>
-								<!-- /.products-item_title -->
-								<div class="products-item_subtitle">Best Product</div>
-								<!-- /.products-item_subtitle -->
-								<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
-								<!-- /.products-item_text -->
-							</div>
-							<!-- /.products-item_content -->
+							<!-- /.products-item -->
 						</div>
-						<!-- /.products-item -->
-					</div>
-					<!-- /.col-12 col-md-6 col-lg-4 -->
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="products-item">
-							<div class="products-item_img">
-								<img class='img-responsive' src="../img/products/product-item-4.png" alt="">
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-4.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
 							</div>
-							<!-- /.products-item_img -->
-							<div class="products-item_content">
-								<div class="products-item_title">Title</div>
-								<!-- /.products-item_title -->
-								<div class="products-item_subtitle">Best Product</div>
-								<!-- /.products-item_subtitle -->
-								<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
-								<!-- /.products-item_text -->
-							</div>
-							<!-- /.products-item_content -->
+							<!-- /.products-item -->
 						</div>
-						<!-- /.products-item -->
-					</div>
-					<!-- /.col-12 col-md-6 col-lg-4 -->
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="products-item">
-							<div class="products-item_img">
-								<img class='img-responsive' src="../img/products/product-item-5.png" alt="">
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-5.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
 							</div>
-							<!-- /.products-item_img -->
-							<div class="products-item_content">
-								<div class="products-item_title">Title</div>
-								<!-- /.products-item_title -->
-								<div class="products-item_subtitle">Best Product</div>
-								<!-- /.products-item_subtitle -->
-								<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
-								<!-- /.products-item_text -->
-							</div>
-							<!-- /.products-item_content -->
+							<!-- /.products-item -->
 						</div>
-						<!-- /.products-item -->
-					</div>
-					<!-- /.col-12 col-md-6 col-lg-4 -->
-					<div class="col-12 col-md-6 col-lg-4">
-						<div class="products-item">
-							<div class="products-item_img">
-								<img class='img-responsive' src="../img/products/product-item-6.png" alt="">
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-6.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
 							</div>
-							<!-- /.products-item_img -->
-							<div class="products-item_content">
-								<div class="products-item_title">Title</div>
-								<!-- /.products-item_title -->
-								<div class="products-item_subtitle">Best Product</div>
-								<!-- /.products-item_subtitle -->
-								<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
-								<!-- /.products-item_text -->
-							</div>
-							<!-- /.products-item_content -->
+							<!-- /.products-item -->
 						</div>
-						<!-- /.products-item -->
+						<!-- /.col-12 col-md-6 col-lg-4 -->
 					</div>
-					<!-- /.col-12 col-md-6 col-lg-4 -->
+					<!-- /.row -->
 				</div>
-				<!-- /.row -->
+				<!-- /.container -->
 			</div>
-			<!-- /.container -->
+			<!-- /.products-items -->
+			<div class="products-items">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-1.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-2.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-3.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-4.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-5.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-6.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.products-items -->
+			<div class="products-items">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-1.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-2.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-3.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-4.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-5.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+						<div class="col-12 col-md-6 col-lg-4">
+							<div class="products-item">
+								<div class="products-item_img">
+									<img class='img-responsive' src="../img/products/product-item-6.png" alt="">
+								</div>
+								<!-- /.products-item_img -->
+								<div class="products-item_content">
+									<div class="products-item_title">Title</div>
+									<!-- /.products-item_title -->
+									<div class="products-item_subtitle">Best Product</div>
+									<!-- /.products-item_subtitle -->
+									<div class="products-item_text">Duis bibendum diam non erat facilaisis en ter</div>
+									<!-- /.products-item_text -->
+								</div>
+								<!-- /.products-item_content -->
+							</div>
+							<!-- /.products-item -->
+						</div>
+						<!-- /.col-12 col-md-6 col-lg-4 -->
+					</div>
+					<!-- /.row -->
+				</div>
+				<!-- /.container -->
+			</div>
+			<!-- /.products-items -->
 		</div>
-		<!-- /.products-items -->
-		
+		<!-- /.products-slider -->
 	</section>
 	<!-- /.products -->
-	<section class="about">
+	<section class="about" id="about">
 		<div class="container">
 			<div class="about-header">
 				<h1 class="about-header_title">
@@ -308,8 +598,8 @@
 			</div>
 			<!-- /.about-header -->
 			<div class="about-content">
-				<div class="row justify-content-between">
-					<div class="col-12 col-lg-6">
+				<div class="row justify-content-between align-items-center">
+					<div class="col-12 col-md-6">
 						<div class="about-content_text">
 							Nullam at scelerisque tellus. Nulla feugiat iaculis ante, non tincidunt ligula scelerisque a. Vestibulum accumsan tincidunt odio vel finibus. Phasellus vestibulum lobortis ligula ut volutpat. Maecenas vitae nibh vel purus mollis semper. Nullam tempus feugiat mi id semper. Pellentesque ac posuere augue, vitae mollis enim. Etiam et ullamcorper dolor, a hendrerit quam. 
 						</div>
@@ -373,7 +663,7 @@
 						<!-- /.about-content_bar -->
 					</div>
 					<!-- /.col-12 col-lg-6 -->
-					<div class="col-12 col-lg-6">
+					<div class="col-12 col-md-6">
 						<div class="about-content_picture">
 							<img src="./img/phone.png" class="img-responsive" alt="">
 						</div>
@@ -389,7 +679,7 @@
 		
 	</section>
 	<!-- /.about -->
-	<section class="contact">
+	<section class="contact" id="contact">
 		<div class="contact-header">
 			<h1 class="contact-header_title">get in <span class="title_special">touch</span></h1>
 			<!-- /.contact-header_title -->
@@ -401,11 +691,6 @@
 		</div>
 		<!-- /.contact-header -->
 		<div class="contact-content">
-			<div class="contact-content_map">
-				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2573.8040970924003!2d24.020327015708865!3d49.827347079394265!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x473add617fef7dc7%3A0x4582e9e21d4f4a3a!2z0KbQtdC90YLRgNCw0LvRjNC90LjQuSDQv9Cw0YDQuiDQutGD0LvRjNGC0YPRgNC4INGC0LAg0LLRltC00L_QvtGH0LjQvdC60YMg0ZbQvNC10L3RliDQkdC-0LPQtNCw0L3QsCDQpdC80LXQu9GM0L3QuNGG0YzQutC-0LPQvg!5e0!3m2!1suk!2sua!4v1557383706367!5m2!1suk!2sua"  height="634" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-			<!-- /.contact-content_map -->
-			
 			<div class="contact-content_data">
 				<div class="row justify-content-between">
 					<div class="col-12 col-lg-7">
@@ -496,7 +781,8 @@
 		</div>
 		<!-- /.container-fluid -->
 	</footer>
+	
 	<script src="js/scripts.min.js"></script>
-
+	<script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 </body>
 </html>

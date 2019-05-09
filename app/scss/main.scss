@@ -43,9 +43,9 @@ body {
 .text-center {
 	text-align: center;
 }
-.align-right {
+.group-header {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
 }
 
