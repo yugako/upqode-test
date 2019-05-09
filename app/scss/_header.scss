@@ -1,6 +1,10 @@
 .header {
 	padding-top: 24px;
 	padding-bottom: 22px;
+	position: sticky;
+	top: 0;
+	z-index: 3;
+	background-color: #fff;
 	&-logo {
 		&_special {
 			color: #009dda;
