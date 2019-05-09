@@ -1,5 +1,6 @@
 .products {
 	position: relative;
+	background-image: url('../img/products/product-items-bg.jpg');
 	&-title {
 		text-align: center;
 		padding-top: 48px;
@@ -24,10 +25,6 @@
 	&-items {
 		padding-top: 116px;
 		padding-bottom: 171px;
-		background-image: url('../img/products/product-items-bg.jpg');
-		position: absolute;
-		width: 100%;
-		top: 119px;
 	}
 	&-item {
 		display: flex;

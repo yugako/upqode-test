@@ -33,7 +33,6 @@ body {
 }
 
 .img-responsive {
-	display: block;
 	max-width: 100%;
 	height: auto;
 	&.img-width {
@@ -59,4 +58,5 @@ b, strong {
 @import "banner";
 @import "features";
 @import "products";
+@import "about";
 @import "media"; // Always at the end
