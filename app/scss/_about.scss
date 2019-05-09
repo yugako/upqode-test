@@ -37,6 +37,39 @@
 		}
 		&_picture {
 			text-align: right;
+		}
+		&_bar {
+			.bar {
+				
+				&-item {
+					margin-bottom: 20px;
+					&_title {
+						display: flex;
+						justify-content: space-between;
+						color: #444444;
+						font-family: $default-font;
+						font-size: 13px;
+						font-weight: 700;
+						line-height: 60px;
+						text-transform: uppercase;
+						letter-spacing: 0.65px;
+					}
+					&_value {
+						width: 100%;
+						position: relative;
+						height: 9px;
+						border: 1px solid #dddddd;
+					}
+					&_counter {
+						position: absolute;
+						height: 3px;
+						top: 2px;
+						width: 0%;
+					}
+				}
+				
+			}
 		}		
 	}
+
 }
