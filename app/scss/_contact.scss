@@ -101,3 +101,33 @@
 
 	}
 }
+
+.label input {
+  position: absolute;
+  z-index: -1;
+  opacity: 0;
+}
+.label-text {
+  position: relative;
+  padding: 0 0 0 60px;
+  cursor: pointer;
+}
+.label-text:before {
+  content: '';
+  position: absolute;
+  top: -4px;
+  left: 0;
+  width: 26px;
+  height: 26px;
+  border: 2px solid #b7b7b7;
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+  transition: .2s;
+}
+
+ .label input:checked + .label-text:before {
+  background: #ffff00;
+}
+
+.label input:focus + .label-text:before {
+  box-shadow: inset 0 2px 3px rgba(0,0,0,.2), 0 0 0 3px rgba(255,255,0,.7);
+} 
