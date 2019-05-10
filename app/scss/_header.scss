@@ -27,23 +27,7 @@
             margin-top: 5.5px;
             padding-left: 0;
             margin-bottom: 0;
-            li {
-                &:hover {
-                   ul a,  ul li ul li a {
-                       color: white;
-                       text-decoration: none;
-                   }
-                }
-                ul {
-                    li:hover, li ul li:hover {
-                        transition: ease-in-out .35s;
-                    }
-                    li:hover a, li ul li:hover a {
-                       color: #fff200;
-                       transition: ease-in-out .35s; 
-                    }
-                } 
-            }
+            
         }
 
         &_item {
@@ -135,6 +119,25 @@
     }
 }
 
+.header-menu_list {
+    li {
+        &:hover {
+           ul a,  ul li ul li a {
+               color: white;
+               text-decoration: none;
+           }
+        }
+        ul {
+            li:hover, li ul li:hover {
+                transition: ease-in-out .35s;
+            }
+            li:hover a, li ul li:hover a {
+               color: #fff200;
+               transition: ease-in-out .35s; 
+            }
+        } 
+    }
+}
 .dropdown {
     position: absolute;
     padding-left: 0;
@@ -181,28 +184,28 @@
 
 }
 
-.hassubs {
-    &:hover, .hassubs:hover .dropdown {
-        opacity: 1;
-        visibility: visible;
-        transition: ease-in .35s;
-    }
-    .hassubs {
-        .dropdown {
-            position: absolute;
-            width: 183px;
-            left: 165px;
-            top: 0px;
-            opacity: 0;
-            padding-left: 0;
-            visibility: hidden;
-            transition: ease-out .35s;
-            .subs {
-                left: 25px;
-                position: relative;
-                width: 183px;
-                top: 0px;
-            }
-        }
-    }
+.hassubs:hover,
+.hassubs:hover .dropdown {
+    opacity: 1;
+    visibility: visible;
+    transition: ease-in .35s;
+} 
+.hassubs .hassubs .dropdown {
+   position: absolute;
+   width: 183px;
+   left: 165px;
+   top: 0px;
+   opacity: 0;
+   padding-left: 0;
+   visibility: hidden;
+   transition: ease-out .35s; 
 }
+
+.hassubs .hassbubs .dropdown .subs {
+    left: 25px;
+    position: relative;
+    width: 183px;
+    top: 0px;
+}
+    
+

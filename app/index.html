@@ -29,7 +29,7 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="row justify-content-between">
+			<div class="row justify-content-between align-items-center">
 				<div class="col-6 col-sm-6 col-lg-3">
 					<div class="header-logo">
 						up<span class='header-logo_special'>qode</span> 
@@ -774,7 +774,7 @@
 			<div class="contact-content_data">
 				<div class="row justify-content-between">
 					<div class="col-12 col-lg-7">
-						<form class="contact-form">
+						<form class="contact-form" action="mail/mail.php" method="POST">
 							<div class="row justify-content-between">
 								<div class="col-12 col-lg-6">
 									<input required class="contact-form_field input" type="text" name='full_name' placeholder="Full Name">
@@ -795,7 +795,7 @@
 											<input type="checkbox" name="like">
 											<span class="label-text">I like your company</span>
 										</label>
-										<button class="button" type="submit">Send</button>
+										<button class="button submit-btn" type="submit">Send</button>
 									</div>
 									<!-- /.contact_form-submit -->
 								</div>
@@ -805,6 +805,7 @@
 							<!-- /.row -->
 						</form>
 						<!-- /.contact_form -->
+						<div class="message"></div>
 					</div>
 					<!-- /.col-12 col-lg-8 -->
 					<div class="col-12 col-lg-4">

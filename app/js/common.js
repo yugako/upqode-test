@@ -110,3 +110,43 @@ $(function() {
 
 
 });
+
+window.addEventListener('load', function() {
+    let submit = $('.submit-btn');
+    let popup = $('.popup');
+
+    mail('.contact-form');
+
+    function mail(elem) {
+        $(elem).sendMail({
+            afterInit: function(sets) {},
+            beforeSend: function(sets) {
+                submit.addClass('disabled');
+            },
+            afterSend: function(sets) {
+                submit.removeClass('disabled');
+                
+            },
+            onSuccess: function(sets, response) {
+                $(elem).parent().append('<div class="message text-center">Повідомлення надіслано!</div> ');
+               setTimeout(function () {
+                   $('.message').fadeOut();
+               }, 3000);
+            },
+            onServerError: function(sets, response) {
+                $(elem).parent().append('<div class="message text-center">Повідомлення не надіслано! Помилка сервера</div> ');
+               setTimeout(function () {
+                   $('.message').fadeOut();
+               }, 3000);
+                
+            },
+            onAjaxError: function(sets, response) {
+               $(elem).parent().append('<div class="message text-center">Повідомлення не надіслано! Помилка мережі!</div> ');
+               setTimeout(function () {
+                   $('.message').fadeOut();
+               }, 3000);
+                
+            }
+        })
+    }        
+});
