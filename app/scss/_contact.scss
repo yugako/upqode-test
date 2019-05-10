@@ -48,6 +48,10 @@
 			margin: auto;
 			width: 100%;
 			background-color: rgba(#1a1a1a, 0.65);
+			.message {
+				margin-top: 15px;
+				color: #f3f3f3;
+			}
 		}
 		&_info {
 			color: #f3f3f3;
