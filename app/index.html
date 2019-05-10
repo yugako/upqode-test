@@ -29,7 +29,7 @@
 <body>
 	<header class="header">
 		<div class="container">
-			<div class="row justify-content-between align-items-center">
+			<div class="row justify-content-between">
 				<div class="col-6 col-sm-6 col-lg-3">
 					<div class="header-logo">
 						up<span class='header-logo_special'>qode</span> 
@@ -157,6 +157,15 @@
 						Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
 					</div>
 					<!-- /.features-item_text -->
+					<div class="features-item_overlay">
+						<div class="features-item_overlay-title">See more</div>
+						<div class="features-item_overlay-buttons">
+							<i class="fas fa-link"></i>
+							<i class="fas fa-search-plus"></i>
+						</div>
+						<!-- /.buttons -->
+					</div>
+					<!-- /.product-item_overlay -->
 				</div>
 				<!-- /.features-item -->
 				<div class="features-item">
@@ -172,6 +181,15 @@
 						Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
 					</div>
 					<!-- /.features-item_text -->
+					<div class="features-item_overlay">
+						<div class="features-item_overlay-title">See more</div>
+						<div class="features-item_overlay-buttons">
+							<i class="fas fa-link"></i>
+							<i class="fas fa-search-plus"></i>
+						</div>
+						<!-- /.buttons -->
+					</div>
+					<!-- /.product-item_overlay -->
 				</div>
 				<!-- /.features-item -->
 				<div class="features-item">
@@ -185,6 +203,15 @@
 						Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
 					</div>
 					<!-- /.features-item_text -->
+					<div class="features-item_overlay">
+						<div class="features-item_overlay-title">See more</div>
+						<div class="features-item_overlay-buttons">
+							<i class="fas fa-link"></i>
+							<i class="fas fa-search-plus"></i>
+						</div>
+						<!-- /.buttons -->
+					</div>
+					<!-- /.product-item_overlay -->
 				</div>
 				<!-- /.features-item -->
 				<div class="features-item">
@@ -198,6 +225,15 @@
 						Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
 					</div>
 					<!-- /.features-item_text -->
+					<div class="features-item_overlay">
+						<div class="features-item_overlay-title">See more</div>
+						<div class="features-item_overlay-buttons">
+							<i class="fas fa-link"></i>
+							<i class="fas fa-search-plus"></i>
+						</div>
+						<!-- /.buttons -->
+					</div>
+					<!-- /.product-item_overlay -->
 				</div>
 				<!-- /.features-item -->
 				<div class="features-item">
@@ -211,6 +247,15 @@
 						Duis bibendum diam non erat facilaisis en ter tincidunt. Duis
 					</div>
 					<!-- /.features-item_text -->
+					<div class="features-item_overlay">
+						<div class="features-item_overlay-title">See more</div>
+						<div class="features-item_overlay-buttons">
+							<i class="fas fa-link"></i>
+							<i class="fas fa-search-plus"></i>
+						</div>
+						<!-- /.buttons -->
+					</div>
+					<!-- /.product-item_overlay -->
 				</div>
 				<!-- /.features-item -->
 				
@@ -623,8 +668,14 @@
 						<div class="about-content_bar">
 							<div class="bar-item" >
 								<div class="bar-item_title">
-									<span>Photoshop</span>
-									<span>79%</span>
+									<div>Photoshop</div>
+									
+									<div class="bar-item_count">
+										<span class='bar-item_percent'>79</span>
+										<span>%</span>
+									</div>
+									<!-- /.bar-item_count -->
+									
 								</div>
 								<!-- /.bar-item_title -->
 								<div class="bar-item_value" data-percent="79%">
@@ -636,8 +687,13 @@
 							<!-- /.bar-item -->
 							<div class="bar-item" >
 								<div class="bar-item_title">
-									<span>HTML/CSS</span>
-									<span>90%</span>
+									<div>HTML/CSS</div>
+									<div class="bar-item_count">
+										<span class='bar-item_percent'>90</span>
+										<span>%</span>
+									</div>
+									<!-- /.bar-item_count -->
+									
 								</div>
 								<!-- /.bar-item_title -->
 								<div class="bar-item_value" data-percent="90%">
@@ -649,8 +705,12 @@
 							<!-- /.bar-item -->
 							<div class="bar-item" >
 								<div class="bar-item_title">
-									<span>Javascript</span>
-									<span>69%</span>
+									<div>Javascript</div>
+									<div class="bar-item_count">
+										<span class='bar-item_percent'>69</span>
+										<span>%</span>
+									</div>
+									<!-- /.bar-item_count -->
 								</div>
 								<!-- /.bar-item_title -->
 								<div class="bar-item_value" data-percent="69%">
@@ -662,8 +722,12 @@
 							<!-- /.bar-item -->
 							<div class="bar-item" >
 								<div class="bar-item_title">
-									<span>Wordpress</span>
-									<span>92%</span>
+									<div>Wordpress</div>
+									<div class="bar-item_count">
+										<span class='bar-item_percent'>92</span>
+										<span>%</span>
+									</div>
+									<!-- /.bar-item_count -->
 								</div>
 								<!-- /.bar-item_title -->
 								<div class="bar-item_value" data-percent="92%">
@@ -711,17 +775,18 @@
 				<div class="row justify-content-between">
 					<div class="col-12 col-lg-7">
 						<form class="contact-form">
-							<div class="row">
+							<div class="row justify-content-between">
 								<div class="col-12 col-lg-6">
-									<input class="contact-form_field input" type="text" name='full_name' placeholder="Full Name">
+									<input required class="contact-form_field input" type="text" name='full_name' placeholder="Full Name">
 								</div>
 								<!-- /.col-12 col-lg-6 -->
 								<div class="col-12 col-lg-6">
-									<input class="contact-form_field input" type="email" name="email" placeholder="E-mail Address">
+									<input required class="contact-form_field input" type="email" name="email" placeholder="E-mail Address">
+									<span class="input-caret">&#9660;</span>
 								</div>
 								<!-- /.col-12 col-lg-6 -->
 								<div class="col-12">
-									<textarea class="contact-form_field textarea" name="message" placeholder="Message" cols="30" rows="10"></textarea>
+									<textarea required class="contact-form_field textarea" name="message" placeholder="Message" cols="30" rows="10"></textarea>
 								</div>
 								<!-- /.col-12 -->
 								<div class="col-12">
@@ -749,13 +814,13 @@
 								Your City, code 01234 <br>
 								Country Name
 							</address>
-							<div>
-								+880 123 456 78 98 <br>
-								+860 987 648 74 95
+							<div class='phone'>
+								<a href="tel:+8801234567898">+880 123 456 78 98</a> <br>
+								<a href="tel:+8609876487495">+860 987 648 74 95</a>
 							</div>
-							<div>
-								company@mail.com <br>
-								sales@mail.com
+							<div class="mail">
+								<a href="mailto:company@mail.com">company@mail.com</a> <br>
+								<a href="mailto:sales@mail.com">sales@mail.com</a>
 							</div>
 
 								

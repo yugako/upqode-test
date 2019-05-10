@@ -1,4 +1,5 @@
 .contact {
+	padding-top: 82px;
 	&-header {
 		text-align: center;
 		&_title {
@@ -41,7 +42,8 @@
 			background-color: rgba(#000, 0.65);
 		}
 		&_data {
-			padding: 30px 50px;
+			padding: 83px 81px;
+			padding-left: 67px;
 			max-width: 945px;
 			margin: auto;
 			width: 100%;
@@ -53,10 +55,18 @@
 			font-size: 16px;
 			font-weight: 400;
 			line-height: 24px;
+			.phone {
+				margin-bottom: 30px;
+			}
+			a {
+				color: #f3f3f3;
+				text-decoration: none;
+			}
 		}
 	}
 	&-form {
 		&_field {
+			margin-left: auto;
 			color: #b7b7b7;
 			font-family: $default-font;
 			font-size: 16px;
@@ -64,8 +74,9 @@
 			line-height: 24px;
 			background-color: transparent;
 			width: 100%;
+			max-width: 239px;
 			border: 1px solid rgba(#ffffff, 0.5);
-			padding: 19px 21px;
+			padding: 15px 21px;
 			margin-bottom: 13px;
 		}
 		&_submit {
@@ -73,6 +84,18 @@
 			justify-content: space-between;
 			align-items: center;
 			width: 100%;
+		}
+		.input {
+			position: relative;
+			&-caret {
+				position: absolute;
+				right: 35px;
+				top: 20px;
+				font-size: 14px;
+			}
+		}
+		.input:focus + .input-caret {
+			color: #fff;
 		}
 		.textarea {
 			max-width: 100%;
@@ -91,40 +114,39 @@
 			padding: 19px 43px;
 			cursor: pointer;
 		}
-		.label-text {
-			color: #b7b7b7;
-			font-family: $default-font;
-			font-size: 16px;
-			font-weight: 400;
-			line-height: 24px;
+		.label {
+			input {
+				position: absolute;
+				z-index: -1;
+				opacity: 0;
+			}
+			&-text {
+				color: #b7b7b7;
+				font-family: $default-font;
+				font-size: 16px;
+				font-weight: 400;
+				line-height: 24px;
+				position: relative;
+				padding: 0 0 0 35px;
+				cursor: pointer;
+				&::before {
+					content: '';
+					position: absolute;
+					left: 0;
+					width: 23px;
+					height: 23px;
+					border: 2px solid #b7b7b7;
+					box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
+					transition: .2s;
+				}
+			}
 		}
+			
 
 	}
 }
 
-.label input {
-  position: absolute;
-  z-index: -1;
-  opacity: 0;
-}
-.label-text {
-  position: relative;
-  padding: 0 0 0 60px;
-  cursor: pointer;
-}
-.label-text:before {
-  content: '';
-  position: absolute;
-  top: -4px;
-  left: 0;
-  width: 26px;
-  height: 26px;
-  border: 2px solid #b7b7b7;
-  box-shadow: inset 0 2px 3px rgba(0,0,0,.2);
-  transition: .2s;
-}
-
- .label input:checked + .label-text:before {
+.label input:checked + .label-text:before {
   background: #ffff00;
 }
 

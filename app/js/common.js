@@ -2,8 +2,9 @@
 
 var $window = $(window);
 var $elem = $(".bar-item_value")
-
-function isScrolledIntoView($elem, $window) {
+var $elem1 = $('.bar-item_percent');
+var flag = true;
+function isScrolledIntoView($elem,  $window) {
     var docViewTop = $window.scrollTop();
     var docViewBottom = docViewTop + $window.height();
 
@@ -20,6 +21,25 @@ $(document).on("scroll", function () {
 				width:$(this).attr('data-percent')
 			}, 2000);
         });
+    }
+});
+
+$(document).on("scroll", function () {
+    if (isScrolledIntoView($elem1, $window) && flag) {
+        $elem1.each(function () {
+            $(this).prop('Counter', 0).animate({
+                Counter: $(this).text()
+            }, {
+                duration: 2000,
+                easing: 'swing',
+                step:function(now){
+                    $(this).text(Math.ceil(now));
+                }
+            
+            }
+        );
+        });
+        flag = false;
     }
 });
 
@@ -53,18 +73,6 @@ $(function() {
     	$('.menu').toggleClass('menu-active');
     });
 
-    /*Smoth scroll*/
-
-    /*$("#nav").on("click", "a", function(event) {
-        event.preventDefault();
-
-        var id = $(this).attr('href'),
-
-            top = $(id).offset().top - 50;
-
-        $('body,html').animate({ scrollTop: top }, 1500);
-    });*/
-
 
     var sections = $('section'), 
     	nav = $('nav'), 
@@ -92,10 +100,13 @@ $(function() {
         , id = $el.attr('href');
       
       $('html, body').animate({
-        scrollTop: $(id).offset().top - nav_height - 50
+        scrollTop: $(id).offset().top - nav_height + 20
       }, 500);
       
       return false;
     });
+
+
+
 
 });

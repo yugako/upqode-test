@@ -3,14 +3,6 @@
 @import "fonts";
 @import "libs";
 
-::placeholder {
-	color: #666;
-}
-
-::selection {
-	background-color: $accent;
-	color: #fff;
-}
 
 body {
 	font-size: 16px;
@@ -19,7 +11,6 @@ body {
 	line-height: 1.65;
 	font-family: $default-font;
 	overflow-x: hidden;
-	color: $text;
 	input, textarea {
 		border: #666 1px solid;
 		outline: none;
@@ -53,7 +44,7 @@ li a {
 .group-header {
 	display: flex;
 	justify-content: flex-end;
-	align-items: center;
+	align-items: flex-end;
 }
 
 .link-active {

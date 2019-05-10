@@ -1,6 +1,6 @@
 .header {
-    padding-top: 24px;
-    padding-bottom: 22px;
+    padding-top: 9px;
+    padding-bottom: 9px;
     position: sticky;
     top: 0;
     z-index: 3;
@@ -12,11 +12,10 @@
         }
 
         color: #503392;
-        letter-spacing: 1.2px;
-        font-family: BEYNO;
+        letter-spacing: 1.4px;
+        font-family: $logo-font;
         font-size: 30px;
         font-weight: bold;
-        line-height: 24px;
         text-transform: uppercase;
     }
 
@@ -25,12 +24,30 @@
             display: flex;
             justify-content: space-between;
             list-style: none;
+            margin-top: 5.5px;
             padding-left: 0;
             margin-bottom: 0;
+            li {
+                &:hover {
+                   ul a,  ul li ul li a {
+                       color: white;
+                       text-decoration: none;
+                   }
+                }
+                ul {
+                    li:hover, li ul li:hover {
+                        transition: ease-in-out .35s;
+                    }
+                    li:hover a, li ul li:hover a {
+                       color: #fff200;
+                       transition: ease-in-out .35s; 
+                    }
+                } 
+            }
         }
 
         &_item {
-            margin: auto 28px;
+            margin: auto 30px;
         }
 
         &_link {
@@ -39,7 +56,6 @@
             font-size: 16px;
             font-weight: 400;
             line-height: 24px;
-
             &:hover {
                 text-decoration: none;
                 font-weight: 700;
@@ -50,11 +66,10 @@
 
     &-search {
         position: relative;
-
         &_input {
             background-color: rgba(#8d78b7, .2);
             border: none;
-            max-width: 180px;
+            max-width: 300px;
             width: 100%;
         }
 
@@ -102,7 +117,6 @@
 
         span.active {
             background: none;
-
             &::before,
             &::after {
                 transition: 0.5s;
@@ -120,7 +134,6 @@
         }
     }
 }
-
 
 .dropdown {
     position: absolute;
@@ -168,53 +181,28 @@
 
 }
 
-.hassubs:hover .dropdown,
-.hassubs .hassubs:hover .dropdown {
-    opacity: 1;
-    visibility: visible;
-    transition: ease-in .35s;
-    -moz-transition: ease-in .35s;
-    -webkit-transition: ease-in .35s;
-}
-
-.header-menu_list li:hover ul a,
-.header-menu_list li:hover ul li ul li a {
-    color: white;
-    text-decoration: none;
-}
-
-.header-menu_list li ul li:hover,
-.header-menu_list li ul li ul li:hover {
-    transition: ease-in-out .35s;
-    -moz-transition: ease-in-out .35s;
-    -webkit-transition: ease-in-out .35s;
-}
-
-.header-menu_list li ul li:hover a,
-.header-menu_list li ul li ul li:hover a {
-    color: #fff200;
-    transition: ease-in-out .35s;
-    -moz-transition: ease-in-out .35s;
-    -webkit-transition: ease-in-out .35s;
-}
-
-/*Second Level*/
-.hassubs .hassubs .dropdown .subs {
-    left: 25px;
-    position: relative;
-    width: 183px;
-    top: 0px;
-}
-
-.hassubs .hassubs .dropdown {
-    position: absolute;
-    width: 183px;
-    left: 165px;
-    top: 0px;
-    opacity: 0;
-    padding-left: 0;
-    visibility: hidden;
-    transition: ease-out .35s;
-    -moz-transition: ease-out .35s;
-    -webkit-transition: ease-out .35s;
+.hassubs {
+    &:hover, .hassubs:hover .dropdown {
+        opacity: 1;
+        visibility: visible;
+        transition: ease-in .35s;
+    }
+    .hassubs {
+        .dropdown {
+            position: absolute;
+            width: 183px;
+            left: 165px;
+            top: 0px;
+            opacity: 0;
+            padding-left: 0;
+            visibility: hidden;
+            transition: ease-out .35s;
+            .subs {
+                left: 25px;
+                position: relative;
+                width: 183px;
+                top: 0px;
+            }
+        }
+    }
 }
