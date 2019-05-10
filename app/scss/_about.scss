@@ -1,6 +1,6 @@
 .about {
-	padding-top: 120px;
-	padding-bottom: 82px;
+	padding-top: 175px;
+	padding-bottom: 40px;
 	&-header {
 		&_title {
 			color: #232323;
@@ -22,7 +22,7 @@
 			font-weight: 400;
 			line-height: 24px;
 			letter-spacing: 0.56px;
-			margin-bottom: 56px;
+			margin-bottom: 41px;
 		}
 	}
 	&-content {
@@ -33,7 +33,7 @@
 			font-weight: 400;
 			line-height: 24px;
 			letter-spacing: 0.56px;
-			margin-bottom: 70px;
+			margin-bottom: 45px;
 		}
 		&_picture {
 			text-align: right;
@@ -41,7 +41,7 @@
 		&_bar {
 			.bar {
 				&-item {
-					margin-bottom: 20px;
+					margin-bottom: 10px;
 					&_title {
 						display: flex;
 						justify-content: space-between;
@@ -49,7 +49,7 @@
 						font-family: $default-font;
 						font-size: 13px;
 						font-weight: 700;
-						line-height: 60px;
+						line-height: 58px;
 						text-transform: uppercase;
 						letter-spacing: 0.65px;
 					}
